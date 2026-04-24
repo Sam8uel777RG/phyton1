@@ -1,6 +1,6 @@
 """
 Este archivo contiene el menú interactivo para el programa.
-Se utiliza try-catch para manejar los errores
+Se utiliza try-except para manejar los errores
 """
 
 
