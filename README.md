@@ -9,8 +9,8 @@ Un sistema simple de gestión de información de clientes desarrollado en Python
 En la carpeta donde deseas clonar el repositorio, ejecuta los siguientes comandos en la consola:
 
 ```bash
-git clone https://github.com/Yorman4312/gestion-info
-cd gestion-info
+git https://github.com/Sam8uel777RG/phyton1.git
+cd phyton1
 ```
 
 ### Requisitos
@@ -37,9 +37,13 @@ python src/main.py
 ### Funcionalidades
 
 - **Registrar cliente**: Agrega un nuevo cliente con ID, nombre, email y teléfono.
-- **Ver cliente por ID**: Busca y muestra la información de un cliente específico.
-- **Ver todos los clientes**: Lista todos los clientes registrados.
-- **Salir**: Cierra el programa.
+- **Buscar cliente por ID o Email**: Permite encontrar un cliente usando su ID o correo electrónico.
+- **Listar clientes**: Muestra todos los clientes registrados.
+- **Modificar cliente**: Actualiza el nombre, email o teléfono de un cliente existente.
+- **Eliminar cliente**: Borra un cliente del registro.
+- **Salir**: Cierra el programa usando la opción 6.
+
+> Nota: La aplicación ahora usa la opción 6 para salir y la actualización de clientes valida correctamente los datos.
 
 ## Flujo del Programa
 
