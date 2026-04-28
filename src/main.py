@@ -1,4 +1,5 @@
 """
+main.py
 Este es el archivo principal del sistema de gestión de clientes.
 Contiene el punto de entrada y el bucle principal del programa.
 """
@@ -9,9 +10,11 @@ from colorama import Fore, Style, Back, init # Para imprimir mensajes en colores
 init(autoreset=True) # Inicializa colorama para restablecer estilos automáticamente
 
 from menu import show_menu, handle_option # Importa el menú y la gestión de opciones del usuario
+
+
 # ---------------------------------- CÓDIGO PRINCIPAL ----------------------------------
 def run():
-  # Mensaje de bienvenida
+  # Mensaje de bienvenida.
   print(Fore.BLUE + Style.BRIGHT + '===========================================================================================================')
   print(Fore.BLUE + Style.BRIGHT + '=============================== Bienvenido al Sistema de Gestión de Clientes ==============================')
   print(Fore.BLUE + Style.BRIGHT + '===========================================================================================================\n')

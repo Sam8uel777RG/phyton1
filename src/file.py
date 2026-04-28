@@ -1,8 +1,8 @@
-
 """
 file.py
 Gestiona la persistencia de clientes en JSON.
-Contiene funciones para leer y escribir el archivo de datos en el directorio data/."""
+Contiene funciones para leer y escribir el archivo de datos en el directorio data/.
+"""
 
 
 # ---------------------------------- IMPORTACIONES ----------------------------------
@@ -11,18 +11,17 @@ from pathlib import Path
 from colorama import Fore, Style, Back, init # Para imprimir mensajes en colores
 init(autoreset=True) # Inicializa colorama para restablecer estilos automáticamente
 
+
 # ---------------------------------- CONFIGURACIÓN DE RUTA ----------------------------------
 DATA_FILE = Path(__file__).resolve().parent.parent / 'data' / 'records.json'
 
 
 def ensure_data_file():
-  """Asegura que el directorio y el archivo JSON existen antes de leer o escribir."""  
+  """Asegura que el directorio y el archivo JSON existen antes de leer o escribir."""
   DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
   if not DATA_FILE.exists():
     DATA_FILE.write_text('[]', encoding='utf-8')
 
-
-# ---------------------------------- CÓDIGO PRINCIPAL ----------------------------------
 
 def load_data():
   """Carga los datos de clientes desde records.json y devuelve una lista de diccionarios."""

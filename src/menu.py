@@ -1,4 +1,5 @@
 """
+menu.py
 Proporciona el menú interactivo y redirige las opciones del usuario a la lógica de negocio.
 """
 
@@ -9,10 +10,12 @@ init(autoreset=True) # Inicializa colorama para restablecer estilos automáticam
 
 from service import new_customer, search_customer, list_customers, update_customer, delete_customer
 
+
 # ---------------------------------- CÓDIGO PRINCIPAL ----------------------------------
 
 def show_menu():
   print(Fore.BLUE + Style.BRIGHT + '============================== Menú Principal ==============================')
+  print(Fore.BLUE + Style.BRIGHT + '1. Registrar cliente')
   print(Fore.BLUE + Style.BRIGHT + '2. Buscar cliente')
   print(Fore.BLUE + Style.BRIGHT + '3. Listar los clientes')
   print(Fore.BLUE + Style.BRIGHT + '4. Modificar cliente')
@@ -20,7 +23,7 @@ def show_menu():
   print(Fore.BLUE + Style.BRIGHT + '6. Salir')
   print(Fore.BLUE + Style.BRIGHT + '==========================================================================\n')
 
-  
+
 def handle_option(option):
   """Ejecuta la acción correspondiente según la opción seleccionada."""
   # Opción 1: Registrar cliente
@@ -53,7 +56,7 @@ def handle_option(option):
     except Exception as e:
       print(Fore.RED + Style.BRIGHT + f'Error al buscar el cliente: {e}\n')
 
-   # Opción 3: Listar los clientes
+  # Opción 3: Listar los clientes
   elif option == '3':
     try:
       print(Fore.BLUE + Style.BRIGHT + '\nMostrando todos los clientes...')
@@ -67,7 +70,7 @@ def handle_option(option):
     except Exception as e:
       print(Fore.RED + Style.BRIGHT + f'Error al mostrar los clientes: {e}\n')
 
-    # Opción 4: Modificar cliente
+  # Opción 4: Modificar cliente
   elif option == '4':
     try:
       print(Fore.BLUE + Style.BRIGHT + '\nModificando un cliente...')
