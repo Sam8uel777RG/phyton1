@@ -1,13 +1,17 @@
 """
+validate.py
 Contiene las reglas de validación para los campos de cliente.
 Verifica unicidad de ID/email y formatea los datos antes de guardarlos.
 """
+
 
 # ---------------------------------- IMPORTACIONES ----------------------------------
 from colorama import Fore, Style, Back, init # Para imprimir mensajes en colores
 init(autoreset=True) # Inicializa colorama para restablecer estilos automáticamente
 
 import re # Para usar expresiones regulares en la validación de correo electrónico
+
+
 # ---------------------------------- CÓDIGO PRINCIPAL ----------------------------------
 # Función Set para validar los datos de los clientes:
 def validate_customer(customers, id, name, email, phone, current_id=None):

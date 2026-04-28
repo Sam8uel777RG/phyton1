@@ -1,4 +1,4 @@
- Sistema de Gestión de Clientes
+# Sistema de Gestión de Clientes
 
 Un sistema simple de gestión de información de clientes desarrollado en Python. Permite registrar, consultar y gestionar clientes de manera básica, con persistencia de datos en un archivo JSON.
 
@@ -9,7 +9,7 @@ Un sistema simple de gestión de información de clientes desarrollado en Python
 En la carpeta donde deseas clonar el repositorio, ejecuta los siguientes comandos en la consola:
 
 ```bash
-git https://github.com/Sam8uel777RG/phyton1.git
+git clone https://github.com/Sam8uel777RG/phyton1.git
 cd phyton1
 ```
 

@@ -1,7 +1,9 @@
 """
+service.py
 Contiene la lógica de negocio para el CRUD de clientes.
 Incluye el modelo Customer y las operaciones de persistencia en memoria y JSON.
 """
+
 
 # ---------------------------------- IMPORTACIONES ----------------------------------
 from colorama import Fore, Style, Back, init # Para imprimir mensajes en colores
@@ -10,9 +12,6 @@ init(autoreset=True) # Inicializa colorama para restablecer estilos automáticam
 from validate import validate_customer
 from file import load_data, save_data
 
-# ---------------------------------- CÓDIGO PRINCIPAL ----------------------------------
-# Listado de clientes
-customers = []
 
 # ---------------------------------- MODELO DE DATOS ----------------------------------
 class Customer:
@@ -69,6 +68,7 @@ def new_customer(id, name, email, phone):
     return True
   return False
 
+
 """
 Función para ver un cliente por ID o Email:
 - Se recorre la lista de clientes y se busca un cliente con el ID o Email proporcionado.
@@ -79,6 +79,7 @@ Función para ver un cliente por ID o Email:
 """
 def search_customer(data):
   return next((c for c in customers if c.id == data or c.email == data), None)
+
 
 """
 Función para ver todos los clientes:
