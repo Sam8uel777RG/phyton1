@@ -3,6 +3,7 @@ validate.py
 Contiene las reglas de validación para los campos de cliente.
 Verifica unicidad de ID/email y formatea los datos antes de guardarlos.
 """
+"" 
 
 
 # ---------------------------------- IMPORTACIONES ----------------------------------
